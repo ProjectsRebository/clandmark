@@ -1,0 +1,11 @@
+﻿Build started 03/03/2016 07:10:16 ص.
+     1>Project "D:\matlab2015setup\bin\clandmark-master\build\ZERO_CHECK.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because D:/matlab2015setup/bin/clandmark-master/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/matlab2015setup/bin/clandmark-master/build/libclandmark/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "D:\matlab2015setup\bin\clandmark-master\build\ZERO_CHECK.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.10
