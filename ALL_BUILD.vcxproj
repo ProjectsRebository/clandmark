@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{12CEB96B-E9F1-3D01-A30C-536FC8831A3C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCCompiler.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCXXCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeRCCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakePackageConfigHelpers.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\WriteBasicConfigVersionFile.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\matlab2015setup\bin\clandmark-master\cmake\Templates\CLandmarkConfig.cmake;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCCompiler.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCXXCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeRCCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakePackageConfigHelpers.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\WriteBasicConfigVersionFile.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\matlab2015setup\bin\clandmark-master\cmake\Templates\CLandmarkConfig.cmake;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCCompiler.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCXXCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeRCCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakePackageConfigHelpers.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\WriteBasicConfigVersionFile.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\matlab2015setup\bin\clandmark-master\cmake\Templates\CLandmarkConfig.cmake;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/matlab2015setup/bin/clandmark-master/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCCompiler.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeCXXCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\3.5.0-rc1\CMakeRCCompiler.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakePackageConfigHelpers.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\WriteBasicConfigVersionFile.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\matlab2015setup\bin\clandmark-master\cmake\Templates\CLandmarkConfig.cmake;D:\matlab2015setup\bin\clandmark-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\matlab2015setup\bin\clandmark-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/matlab2015setup/bin/clandmark-master/build/ZERO_CHECK.vcxproj">
+      <Project>18AF6840-649F-39CD-979B-1B44759D75AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/matlab2015setup/bin/clandmark-master/build/libclandmark/clandmark.vcxproj">
+      <Project>670B8D30-E1F0-37ED-BD6E-E3EA7C52D4C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/matlab2015setup/bin/clandmark-master/build/libclandmark/flandmark.vcxproj">
+      <Project>076D86B0-16EE-3A40-B1F3-02EADCE657BA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
