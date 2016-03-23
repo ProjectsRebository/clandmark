@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{076D86B0-16EE-3A40-B1F3-02EADCE657BA}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>flandmark</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flandmark.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flandmark</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flandmark.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flandmark</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flandmark.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flandmark</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flandmark.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flandmark</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> -pedantic -pedantic %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> -pedantic -pedantic %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> -pedantic %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> -pedantic %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\matlab2015setup\bin\clandmark-master\build;D:\matlab2015setup\bin\clandmark-master\3rd_party\CImg-1.5.6;D:\matlab2015setup\bin\clandmark-master\3rd_party\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindRapidXML.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindCImg.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\matlab2015setup\bin\clandmark-master\libclandmark\CLandmarkConfig.h.in;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindRapidXML.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindCImg.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\matlab2015setup\bin\clandmark-master\libclandmark\CLandmarkConfig.h.in;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindRapidXML.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindCImg.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\matlab2015setup\bin\clandmark-master\libclandmark\CLandmarkConfig.h.in;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\bin\cmake.exe -HD:/matlab2015setup/bin/clandmark-master -BD:/matlab2015setup/bin/clandmark-master/build --check-stamp-file D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindRapidXML.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CheckCXXSourceCompiles.cmake;D:\matlab2015setup\bin\clandmark-master\cmake\Modules\FindCImg.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\opencv\cmake-3.5.0-rc1-win32-x86\cmake-3.5.0-rc1-win32-x86\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\matlab2015setup\bin\clandmark-master\libclandmark\CLandmarkConfig.h.in;D:\matlab2015setup\bin\clandmark-master\libclandmark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\matlab2015setup\bin\clandmark-master\build\libclandmark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\Flandmark.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CSparseLBPFeatures.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CSparseLBPAppearanceModel.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CDisplacementDeformationCost.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CNormalizedEuclideanLoss.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CTableLoss.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CZeroLoss.h" />
+    <ClInclude Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CTreeMaxSumSolver.h" />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\Flandmark.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CSparseLBPFeatures.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CSparseLBPAppearanceModel.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CDisplacementDeformationCost.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CNormalizedEuclideanLoss.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CTableLoss.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CZeroLoss.cpp"  />
+    <ClCompile Include="D:\matlab2015setup\bin\clandmark-master\libclandmark\CTreeMaxSumSolver.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/matlab2015setup/bin/clandmark-master/build/ZERO_CHECK.vcxproj">
+      <Project>18AF6840-649F-39CD-979B-1B44759D75AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/matlab2015setup/bin/clandmark-master/build/libclandmark/clandmark.vcxproj">
+      <Project>670B8D30-E1F0-37ED-BD6E-E3EA7C52D4C4</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
