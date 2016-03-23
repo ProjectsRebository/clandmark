@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+D:/matlab2015setup/bin/clandmark-master/libclandmark/CMakeLists.txt
+D:/matlab2015setup/bin/clandmark-master/cmake/Modules/FindRapidXML.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/FindPackageHandleStandardArgs.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/FindPackageMessage.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/CMakeParseArguments.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/CheckCXXSourceCompiles.cmake
+D:/matlab2015setup/bin/clandmark-master/cmake/Modules/FindCImg.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/FindPackageHandleStandardArgs.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/FindPackageMessage.cmake
+E:/opencv/cmake-3.5.0-rc1-win32-x86/cmake-3.5.0-rc1-win32-x86/share/cmake-3.5/Modules/CMakeParseArguments.cmake
+D:/matlab2015setup/bin/clandmark-master/libclandmark/CLandmarkConfig.h.in
